@@ -16,6 +16,7 @@ export default function Home() {
     setFirstNounIndex(Math.floor(Math.random() * firstNouns.length));
     setSecondNounIndex(Math.floor(Math.random() * secondNouns.length));
   }
+
   return (
     <div className="container mx-auto px-4">
       <div className="flex flex-col items-center justify-center gap-6 min-h-screen">
@@ -25,10 +26,11 @@ export default function Home() {
         )}
         <button
           onClick={doRandomThing}
-          className="my-6 rounded bg-indigo-200 text-black font-bold py-2 px-3 text-sm"
+          className="my-6 rounded bg-indigo-700 text-white font-bold py-2 px-3 text-sm"
         >
           Click me for an insult, dick
         </button>
+        <p className="opacity-80 text-sm">Made by John and Anna</p>
       </div>
     </div>
   );
