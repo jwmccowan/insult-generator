@@ -1,10 +1,35 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 
-const adjectives = ["Stupid", "Stinky", "Slvtty", "Wretched"];
-const firstNouns = ["shit", "beer", "fart", "shirt", "wall"];
-const secondNouns = ["canoe", "butt", "diaper", "pirate"];
+const adjectives = [
+  "Stupid",
+  "Stinky",
+  "Slvtty",
+  "Wretched",
+  "Boring",
+  "Ugly",
+  "Smelly",
+  "Lazy",
+];
+const firstNouns = [
+  "shit",
+  "beer",
+  "fart",
+  "shirt",
+  "wall",
+  "tooth",
+  "ass",
+  "barf",
+];
+const secondNouns = [
+  "canoe",
+  "butt",
+  "diaper",
+  "pirate",
+  "failure",
+  "nerd",
+  "tax collector",
+];
 
 export default function Home() {
   const [adjIndex, setAdjIndex] = React.useState(-1);
